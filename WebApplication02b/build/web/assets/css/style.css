@@ -1,0 +1,93 @@
+ .header {
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        /* Body layout dạng cột, căn giữa, nền gradient dịu mắt */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 80px; /* tạo khoảng cách cho header cố định */
+        }
+
+        /* Khung chứa form */
+        form {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+            width: 420px;
+            margin-bottom: 40px;
+        }
+
+        /* Tiêu đề form */
+        h1 {
+            text-align: center;
+            color: #333333;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        /* Input, select, textarea */
+        form input[type="text"],
+        form input[type="password"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        /* Checkbox, radio giãn hợp lý */
+        form input[type="checkbox"],
+        form input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        /* Label dùng cho các nhóm */
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 6px;
+        }
+
+        /* Nút bấm */
+        form input[type="submit"],
+        form input[type="reset"],
+        form input[type="button"] {
+            padding: 10px 20px;
+            margin: 6px 8px 0 0;
+            border: none;
+            border-radius: 6px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover,
+        form input[type="reset"]:hover,
+        form input[type="button"]:hover {
+            background-color: #0056b3;
+        }
